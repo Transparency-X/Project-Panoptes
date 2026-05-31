@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Case Study",
+  "description": "A long-form narrative analysis linked to a group.",
+  "type": "object",
+  "required": ["id", "group_id", "title", "content"],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "group_id": {
+      "type": "string",
+      "description": "The id of the corresponding group in data/groups/"
+    },
+    "title": {
+      "type": "string"
+    },
+    "authors": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "summary": {
+      "type": "string"
+    },
+    "content": {
+      "type": "string",
+      "description": "Full Markdown content of the case study."
+    },
+    "sources": {
+      "type": "array",
+      "items": { "$ref": "source.schema.json" }
+    },
+    "last_updated": {
+      "type": "string",
+      "format": "date"
+    }
+  }
+}
