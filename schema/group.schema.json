@@ -1,0 +1,101 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Surveillance Cult Group",
+  "description": "A structured record of a high-control group that uses surveillance mechanisms.",
+  "type": "object",
+  "required": ["id", "name", "active_status", "surveillance_pillars", "sources"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique slug (e.g., 'nxivm'). Lowercase, no spaces."
+    },
+    "name": {
+      "type": "string",
+      "description": "Primary public name."
+    },
+    "aliases": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Alternative names or abbreviations."
+    },
+    "description": {
+      "type": "string",
+      "description": "One-paragraph factual summary."
+    },
+    "founded_year": {
+      "type": ["integer", "null"]
+    },
+    "founder": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "countries": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "ISO 3166-1 alpha-2 codes where the group operates/has operated."
+    },
+    "active_status": {
+      "type": "string",
+      "enum": ["active", "inactive", "dissolved", "historical", "unknown"]
+    },
+    "surveillance_pillars": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["pillar"],
+        "properties": {
+          "pillar": {
+            "type": "string",
+            "enum": ["technological", "peer_to_peer", "institutional", "self_surveillance"]
+          },
+          "intensity": {
+            "type": "string",
+            "enum": ["low", "medium", "high", "extreme"]
+          },
+          "notes": {
+            "type": "string",
+            "description": "Specific examples or context."
+          }
+        }
+      }
+    },
+    "recruitment_methods": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "love_bombing",
+          "algorithmic_profiling",
+          "front_groups",
+          "transitional_targeting",
+          "social_media_ads",
+          "free_seminars",
+          "personal_invitations",
+          "other"
+        ]
+      }
+    },
+    "digital_tools_used": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Software, apps, platforms used for monitoring (e.g., 'Life360', 'spyware')."
+    },
+    "legal_status": {
+      "type": "object",
+      "properties": {
+        "criminal_investigations": { "type": "boolean" },
+        "convictions": { "type": "boolean" },
+        "designated_as_cult": { "type": "boolean" },
+        "details": { "type": "string" }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": { "$ref": "source.schema.json" }
+    },
+    "last_updated": {
+      "type": "string",
+      "format": "date"
+    }
+  }
+}
