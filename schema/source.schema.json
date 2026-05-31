@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Source",
+  "description": "A bibliographic reference or link.",
+  "type": "object",
+  "required": ["type", "title"],
+  "properties": {
+    "type": {
+      "type": "string",
+      "enum": ["news_article", "academic_paper", "court_document", "book", "report", "survivor_testimony", "website", "other"]
+    },
+    "title": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "access_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "authors": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "publication": {
+      "type": "string"
+    },
+    "date_published": {
+      "type": "string"
+    }
+  }
+}
