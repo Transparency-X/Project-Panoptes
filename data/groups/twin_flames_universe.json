@@ -1,0 +1,50 @@
+{
+  "id": "twin_flames_universe",
+  "name": "Twin Flames Universe",
+  "aliases": ["TFU"],
+  "description": "An online spiritual community turned high-control group that mandates extensive digital surveillance, including location sharing, screen sharing, and live document editing of members' private thoughts.",
+  "founded_year": 2018,
+  "founder": ["Jeff Divine", "Shaleia Divine"],
+  "countries": ["US"],
+  "active_status": "active",
+  "surveillance_pillars": [
+    {
+      "pillar": "technological",
+      "intensity": "extreme",
+      "notes": "Mandatory Life360, screen sharing software, shared Google Docs for confessions."
+    },
+    {
+      "pillar": "peer_to_peer",
+      "intensity": "high",
+      "notes": "Members are paired as ‘twin flames’ and must report deviations."
+    },
+    {
+      "pillar": "institutional",
+      "intensity": "medium",
+      "notes": "Leaders monitor social media and issue public call-outs."
+    },
+    {
+      "pillar": "self_surveillance",
+      "intensity": "high",
+      "notes": "Internalisation through constant video check-ins."
+    }
+  ],
+  "recruitment_methods": ["algorithmic_profiling", "social_media_ads", "love_bombing"],
+  "digital_tools_used": ["Life360", "Zoom", "Google Docs", "Screen sharing apps"],
+  "legal_status": {
+    "criminal_investigations": false,
+    "convictions": false,
+    "designated_as_cult": false,
+    "details": "Subject of documentaries and online exposés, but no criminal charges as of 2025."
+  },
+  "sources": [
+    {
+      "type": "news_article",
+      "title": "Inside Twin Flames Universe, the YouTube cult that makes members believe they are destined to be together",
+      "url": "https://www.insider.com/twin-flames-universe-youtube-cult-jeff-shaleia-divine-2021-4",
+      "access_date": "2025-05-01",
+      "publication": "Insider"
+    }
+  ],
+  "last_updated": "2025-05-10"
+}
