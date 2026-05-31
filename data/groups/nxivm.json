@@ -1,0 +1,50 @@
+{
+  "id": "nxivm",
+  "name": "NXIVM",
+  "aliases": ["Executive Success Programs", "ESP"],
+  "description": "A self-help organization that evolved into a sex trafficking and forced labour cult, utilizing blackmail and intense surveillance, led by Keith Raniere.",
+  "founded_year": 1998,
+  "founder": ["Keith Raniere"],
+  "countries": ["US", "MX", "CA"],
+  "active_status": "dissolved",
+  "surveillance_pillars": [
+    {
+      "pillar": "technological",
+      "intensity": "medium",
+      "notes": "Members used encrypted communication; collateral (nude photos, confessions) stored digitally."
+    },
+    {
+      "pillar": "peer_to_peer",
+      "intensity": "high",
+      "notes": "DOS slaves were required to report on each other; ‘masters’ enforced rules."
+    },
+    {
+      "pillar": "institutional",
+      "intensity": "low",
+      "notes": "Legal threats and NDAs used, but no dedicated intelligence wing like Scientology."
+    },
+    {
+      "pillar": "self_surveillance",
+      "intensity": "extreme",
+      "notes": "Collateral made members terrified of exposure; they self-policed thoughts."
+    }
+  ],
+  "recruitment_methods": ["front_groups", "free_seminars", "personal_invitations"],
+  "digital_tools_used": ["Encrypted messaging", "Cloud storage for collateral"],
+  "legal_status": {
+    "criminal_investigations": true,
+    "convictions": true,
+    "designated_as_cult": false,
+    "details": "Raniere convicted in 2019 for racketeering, sex trafficking, etc."
+  },
+  "sources": [
+    {
+      "type": "news_article",
+      "title": "NXIVM leader Keith Raniere found guilty",
+      "url": "https://www.bbc.com/news/world-us-canada-48656785",
+      "access_date": "2025-05-01",
+      "publication": "BBC News"
+    }
+  ],
+  "last_updated": "2025-05-15"
+}
